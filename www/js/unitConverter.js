@@ -2,8 +2,6 @@ var converter = {
     async init() {
         this.jq = $;
 
-        setTimeout(()=>{ this.jq('#app .cover').addClass('fadeout'); },2500);
-
         this.getInfo = '';
         this.result = '';
         await this.setupUnits();
@@ -80,13 +78,6 @@ var converter = {
         }
     },
     async readApi(url) {
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': '9af8a7bb2cmshd185d928c7f5a24p131605jsn50ba27212ca6',
-                'X-RapidAPI-Host': 'unitconversion.p.rapidapi.com'
-            }
-        };
         try {
             const response = await fetch(url, options);
             const result = await response.json();
@@ -97,9 +88,3 @@ var converter = {
         }
     },
 }
-
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    converter.init();
-}
-converter.init();

@@ -124,20 +124,10 @@ var fuel = {
     },
     async calculate(calc) {        
         if(calc > 0) {
-            this.fuelTargetInput.val(this.fixedNum(calc));
+            this.fuelTargetInput.val(app.roundNum(calc,3));
         }    
         if(calc == Infinity) {
             this.fuelTargetInput.val('');
         }
-    },
-    fixedNum(n) {
-        return n.toFixed(this.fixed);
-    },
-
+    }
 }
-
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-    fuel.init();
-}
-fuel.init();

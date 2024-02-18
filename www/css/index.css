@@ -75,7 +75,7 @@ p.summary {
     margin: 20px 0 25px;
 }
 h1,h2,h3,h4 {
-    margin: 30px 0 20px;
+    margin: 0 0 10px;
 }
 h1 {
     font-size: 28px;
@@ -166,6 +166,9 @@ h2 {
 .f22 {
     font-size: 22px;
 }
+.f21 {
+    font-size: 21px;
+}
 .f19 {
     font-size: 19px;
 }
@@ -230,6 +233,9 @@ h2 {
     display: none;
     overflow: hidden;
 }
+.hidden.content {
+
+}
 hr {
     margin: 20px 0;
     border: none;
@@ -238,11 +244,12 @@ hr {
 .trigger {
     position: relative;
     cursor: pointer;
+    padding-left: 25px;
 }
-.trigger::after {
+.trigger::before {
     position: absolute;
-    top: 15px;
-    margin-left: 15px;
+    top: 13px;
+    left: 0;
     border-top: 10px solid var(--primary);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
