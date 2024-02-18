@@ -69,7 +69,7 @@ body {
 }
 /* ********************************************** TYPOGRAPHY */
 p {
-    margin: 5px 0 15px;
+    margin: 0 0 10px;
 }
 p.summary {
     margin: 20px 0 25px;
@@ -343,6 +343,9 @@ input[type="text"]:focus-visible {
     padding: 20px 0;
 }
 
+.tabs .content {
+    display: none;
+}
 
 /* ********************************************** MEDIA QUERIES */
 @media only screen and (max-width: 1200px) {
