@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Converter App</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="app">
+            <div class="cover"></div>
+            <div class="container">
+                <h2 class="trigger">Exchange Rates</h2>
+                <div class="hidden">
+                    <div class="currency grid grid-2">
+                        <div class="col">
+                            <div id="gbp"></div>
+                        </div>
+                    </div>
+                    <div id="history"></div>
+                    <div id="calculator">
+                        <h2>Calculator</h2>
+                        <div class="grid grid-2">
+                            <p>
+                                <label>PLN</label>
+                                <input type="number" name="inputCurrencySource" id="inputCurrencySource" min="1" value="1" />
+                            </p>
+                            <p>
+                                <label>GBP</label>
+                                <input type="text" name="inputCurrencyTarget" id="inputCurrencyTarget" value="" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fuel-converter">
+                    <h2 class="trigger">Fuel Economy Converter</h2>
+                    <div class="hidden">
+                        <div id="fuel" class="grid grid-2">
+                            <div class="col">
+                                <p>
+                                    <input type="number" name="inputFuelSource" id="inputFuelSource" min="1" value="1" />
+                                </p>
+                                <p>
+                                    <select name="fuelSource" id="fuelSource">
+                                        <option value="km/l">Kilometers / Liter</option>
+                                        <option value="l/100km">Litres / 100 km</option>
+                                        <option selected value="mpg">Miles / Gallon (UK)</option>
+                                        <option value="mi/l">Miles / Liter</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <input type="text" name="inputFuelTarget" id="inputFuelTarget" value="" />
+                                </p>
+                                <p>
+                                    <select name="fuelTarget" id="fuelTarget">
+                                        <option value="km/l">Kilometers / Liter</option>
+                                        <option selected value="l/100km">Litres / 100 km</option>
+                                        <option value="mpg">Miles / Gallon (UK)</option>
+                                        <option value="mi/l">Miles / Liter</option>
+                                    </select>
+                                </p>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                <div id="converter">
+                    <h2 class="trigger">Unit Converter</h2>
+                    <div class="hidden">
+                        <div class="text-center">
+                            <div id="selectUnits"></div>
+                        </div>
+                        <div class="grid grid-2">
+                            <div class="col">
+                                <div id="fromUnits"></div>
+                            </div>
+                            <div class="col">
+                                <div id="toUnits"></div>
+                            </div>
+                        </div>
+                        <div class="grid grid-2">
+                            <div class="col"><input type="number" name="" id="fromValue" value="1"></div>
+                            <div class="col"><input type="text" name="" id="toValue"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <script src="js/jq.js"></script>
+        <script src="js/converter.js"></script>
+        <script src="js/config.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

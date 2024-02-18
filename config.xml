@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ww.converter" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Converter</name>
+    <description>Converter App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        WW Project Studio 2023
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <access origin="https://api.nbp.pl" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.GeoBroker" />
+    </feature>
+</widget>
